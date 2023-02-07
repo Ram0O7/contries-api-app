@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/contries-api-app/static/css/main.93a81785.css",
+    "main.js": "/contries-api-app/static/js/main.7ad5696f.js",
+    "static/js/787.0506c4cc.chunk.js": "/contries-api-app/static/js/787.0506c4cc.chunk.js",
+    "index.html": "/contries-api-app/index.html",
+    "main.93a81785.css.map": "/contries-api-app/static/css/main.93a81785.css.map",
+    "main.7ad5696f.js.map": "/contries-api-app/static/js/main.7ad5696f.js.map",
+    "787.0506c4cc.chunk.js.map": "/contries-api-app/static/js/787.0506c4cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93a81785.css",
+    "static/js/main.7ad5696f.js"
+  ]
+}
