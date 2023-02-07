@@ -1,6 +1,6 @@
 {
-  "short_name": "World",
-  "name": "Welcome to the world",
+  "short_name": "React world api",
+  "name": "Where in the world?",
   "icons": [
     {
       "src": "world-map.png",
