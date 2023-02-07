@@ -1,0 +1,41 @@
+.detail-body{
+    padding: 2rem 3.5rem;
+    width: 100%;
+}
+
+.detail-body .body-inner{
+    padding: 1rem 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.body-inner p{
+    line-height: 1.6rem;
+}
+
+.body-inner p span{
+    font-weight: 600;
+}
+
+.detail-body .border-contries .border-btn{
+    cursor: pointer;
+    min-width: 2rem;
+    margin: 0.5rem;
+    padding: 0.2rem 1rem;
+    background-color: var(--card-bg);
+    border: none;
+    box-shadow: 0.5px 0.5px 5px rgb(0,0,0,0.2);
+}
+
+@media (max-width:480px) {
+    .detail-body{
+        padding: 0;
+    }
+    .detail-body .body-inner{
+        flex-direction: column;
+    }
+    .detail-body .border-contries .border-btn{
+        cursor: unset;
+    }
+}

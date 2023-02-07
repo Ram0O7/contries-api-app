@@ -1,0 +1,47 @@
+.filter-header{
+    width: var(--Home-Width);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem auto;
+}
+
+.filter-header input, .filter-header select{
+    outline: none;
+    background-color: var(--card-bg);
+    border: none;
+    height: 3.2rem;
+    padding: 1rem;
+    box-shadow: 0.5px 0.5px 5px rgb(0,0,0,0.2);
+}
+
+.filter-header input{
+    width: 28rem;
+    padding-left: 3rem;
+}
+
+.filter-header .input{
+    position: relative;
+}
+.filter-header .input .search{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color: rgba(115, 122, 150, 0.7);
+}
+
+.filter-header select{
+    width: 12rem;
+    padding: 1rem;
+}
+
+@media (max-width:400px) {
+    .filter-header input{
+        width: 16rem;
+        margin-bottom: 1rem;
+    }
+    .filter-header select{
+        width: 10rem;
+    }
+}

@@ -1,0 +1,43 @@
+.detail-page{
+    width: 90%;
+    margin: 3rem auto;
+    background-color: var(--Body-bg);
+}
+
+.detail-page .back{
+    background: none;
+    border: none;
+    background-color: var(--card-bg);
+    padding: 0.4rem 1.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0.5px 0.5px 5px rgb(0,0,0,0.2);
+}
+
+.detail-page .back:hover{
+    box-shadow: 0.2px 0.2px 2px rgb(0,0,0,0.2);
+}
+
+.detail-main{
+    width: 100%;
+    display: flex;
+    gap:5rem;
+    justify-content: space-between;
+}
+
+.detail-main img{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 2px;
+}
+
+@media (max-width:480px) {
+    .detail-main{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .detail-main img{
+        width: 100%;
+        height: 100%;
+    }
+}

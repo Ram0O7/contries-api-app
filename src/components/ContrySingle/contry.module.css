@@ -1,0 +1,52 @@
+.contry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18rem;
+    border-radius: 6px;
+    background-color: var(--card-bg);
+    box-shadow: 1px 1px 10px rgb(0,0,0,0.2);
+}
+
+.contry:hover{
+    box-shadow: 0.5px 0.5px 5px rgb(0,0,0,0.2);
+}
+
+.img {
+    border-radius: inherit;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.contry .contry-img {
+    border-radius: inherit;
+    width: 100%;
+}
+
+.contry-details {
+    padding: 0 0 2rem 1.5rem;
+}
+
+.contry-details h2 {
+    margin: 0.5rem 0;
+    font-weight: 800;
+}
+
+.contry-details p {
+    margin: 0.2rem 0;
+    font-weight:600;
+}
+
+.contry-details p span {
+    font-weight: 300;
+}
+
+@media (max-width:400px) {
+    .contry{
+        width: 100%;
+    }
+    .contry .img{
+        cursor: unset;
+    }
+}

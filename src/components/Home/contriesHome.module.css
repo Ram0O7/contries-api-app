@@ -1,0 +1,8 @@
+.contries-home{
+    width: var(--Home-Width);
+    margin: 1rem var(--Home-Margin);
+    display: flex;
+    justify-content: space-between;
+    gap:2.5rem;
+    flex-wrap: wrap;
+}

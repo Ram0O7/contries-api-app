@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+:root {
+  --Dark-Blue: hsl(209, 23%, 22%);
+  --Very-Dark-Blue: hsl(207, 26%, 17%);
+  --Dark-Gray: hsl(0, 0%, 52%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Home-Width: 90%;
+  --Home-Margin: auto;
+  /* custom css */
+  --text-color: hsl(207, 26%, 17%);
+  --body-bg: hsl(0,0,98%);
+  --card-bg: hsl(0,0%,100%);
+}
+
+.light-theme {
+  --text-color: var(--Very-Dark-Blue);
+  --body-bg: var(--Very-Light-Gray);
+  --card-bg: var(--White);
+}
+
+.dark-theme {
+  --text-color: var(--White);
+  --body-bg: var(--Very-Dark-Blue);
+  --card-bg: var(--Dark-Blue);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: capitalize;
+  color: var(--text-color);
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+
+body {
+  background-color: var(--body-bg);
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(0, 0, 0, 0.5);
+}
