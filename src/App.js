@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar/NavBar";
 const url = "https://restcountries.com/v3.1/all";
 
 const getStorageTheme = () => {
-  let theme = 'dark-theme';
+  let theme = 'light-theme';
   if (localStorage.getItem('theme')) {
     theme = localStorage.getItem('theme');
   }
@@ -21,6 +21,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [ChosenContry, setChosenContry] = useState({});
   const [theme, setTheme] = useState(getStorageTheme());
+  const [isLoading, setIsLoading] = useState(true);
 
   const fetchContries = async () => {
     try {
@@ -47,6 +48,7 @@ function App() {
         });
       }
       setContries(contryList);
+      setIsLoading(!isLoading);
     } catch (error) {
       console.log(error);
     }
@@ -72,12 +74,14 @@ function App() {
   const clickedContry = (contry) => {
     setChosenContry(contry);
     setShowContryDetail(true);
+    setSearchQuery('');
   }
 
   const setVisibility = (visible) => {
     if (!visible) {
       setShowContryDetail(false);
       setSearchQuery('');
+      setOption('Asia');
     }
   }
 
@@ -88,6 +92,7 @@ function App() {
 
   useEffect(() => {
     fetchContries();
+    // eslint-disable-next-line
   }, [])
 
   useEffect(() => {
@@ -102,11 +107,16 @@ function App() {
       {!showContryDetail &&
         <>
           <Header region={currentRegion} search={onSearch} />
+          { !isLoading ?
           <ContriesHome
             clickedContry={clickedContry}
             contries={contries}
             option={option}
-            searchQuery={searchQuery.toLocaleLowerCase()} />
+            searchQuery={searchQuery.toLocaleLowerCase()}
+             />
+             :
+             <h2 style={{textAlign: 'center'}}>Loading...</h2>
+          }
         </>
       }
       {showContryDetail && <ContryDetail

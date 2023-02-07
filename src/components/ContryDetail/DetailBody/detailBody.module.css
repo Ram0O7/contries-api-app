@@ -28,6 +28,11 @@
     box-shadow: 0.5px 0.5px 5px rgb(0,0,0,0.2);
 }
 
+.detail-body .border-contries .border-btn:hover{
+    color: purple;
+    box-shadow: 0.2px 0.2px 2px rgb(0,0,0,0.2);
+}
+
 @media (max-width:480px) {
     .detail-body{
         padding: 0;

@@ -13,7 +13,7 @@ const ContryDetail = ({ contries, contry, Visibility, borderContry }) => {
 
     return (
         <div className={classes['detail-page']}>
-            <button type='button' className={classes.back} onClick={() => Visibility(false)}><FaArrowLeft /> back</button>
+            <button type='button' className={classes.back} onClick={() => Visibility(false)}><FaArrowLeft className={classes['left-arrow']} /> back</button>
             <div className={classes['detail-main']}>
                 <img src={image} alt={name.common} />
                 <DetailBody contries={contries} contryInfo={contry} borderContry={setBorderContry} />

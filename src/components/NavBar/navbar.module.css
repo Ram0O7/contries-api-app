@@ -10,13 +10,24 @@ nav{
     box-shadow: 1px 1px 10px rgb(0,0,0,0.2);
 }
 
+nav button{
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding-left: 1.4rem;
+    position: relative;
+}
+
+nav button .icon{
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+}
+
 nav h1{
     font-size: 1.8rem;
 }
 
-nav button{
-    cursor: pointer;
-}
 
 @media (max-width:400px) {
     nav h1{

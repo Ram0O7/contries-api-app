@@ -8,10 +8,12 @@ const DetailBody = ({ contryInfo, borderContry, contries }) => {
   const currencyUsed = [];
   const borderList = [];
 
-  borders.forEach((border) => {
-    let FoundContry = contries.find((contry) => contry.alias === border);
-    borderList.push(FoundContry.name.common);
-  });
+  if (borders) {
+    borders.forEach((border) => {
+      let FoundContry = contries.find((contry) => contry.alias === border);
+      borderList.push(FoundContry.name.common);
+    });
+  }
 
   Object.keys(currencies).forEach((key) => {
     currencyUsed.push(currencies[key].name)
